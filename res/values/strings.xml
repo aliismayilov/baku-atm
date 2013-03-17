@@ -7,5 +7,6 @@
     <string name="nearby_atms">Nearby ATMs</string>
     <string name="choose_banks">Choose Banks</string>
     <string name="title_activity_list_banks">ListBanksActivity</string>
+    <string name="good_bank">Good Bank</string>
 
 </resources>
