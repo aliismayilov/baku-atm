@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="nearby_atms">Nearby ATMs</string>
     <string name="choose_banks">Choose Banks</string>
+    <string name="title_activity_list_banks">ListBanksActivity</string>
 
 </resources>
