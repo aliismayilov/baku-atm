@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.safaroff.bakuatm.models.ATM;
 
 /**
@@ -27,9 +28,9 @@ public class DummyContent {
 
 	static {
 		// Add 3 sample items.
-		addItem(new ATM("\"Yamaha\" mağazası", "H.Cavid pr. 528 məh", null));
-		addItem(new ATM("H.Cavid Filialı 1", "Bakı, Yasamal rayonu, ...", null));
-		addItem(new ATM("Prospekt", "H.Cavid pr. ev 15, Space TV ilə ...", null));
+		addItem(new ATM("\"Yamaha\" mağazası", "H.Cavid pr. 528 məh", null, new LatLng(40.397157, 49.82583)));
+		addItem(new ATM("H.Cavid Filialı 1", "Bakı, Yasamal rayonu, ...", null, new LatLng(40.497157, 49.92583)));
+		addItem(new ATM("Prospekt", "H.Cavid pr. ev 15, Space TV ilə ...", null, new LatLng(40.597157, 50.02583)));
 	}
 
 	private static void addItem(ATM item) {
