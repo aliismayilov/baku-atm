@@ -11,4 +11,9 @@ public class ATM {
 		this.longAddress = longAddress;
 		this.bank = bank;
 	}
+	
+	@Override
+	public String toString() {
+		return longAddress;
+	}
 }

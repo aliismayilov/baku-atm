@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.safaroff.bakuatm.models.ATM;
+
 /**
  * Helper class for providing sample content for user interfaces created by
  * Android template wizards.
@@ -16,29 +18,29 @@ public class DummyContent {
 	/**
 	 * An array of sample (dummy) items.
 	 */
-	public static List<DummyItem> ITEMS = new ArrayList<DummyItem>();
+	public static List<ATM> ITEMS = new ArrayList<ATM>();
 
 	/**
 	 * A map of sample (dummy) items, by ID.
 	 */
-	public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+	public static Map<String, ATM> ITEM_MAP = new HashMap<String, ATM>();
 
 	static {
 		// Add 3 sample items.
-		addItem(new DummyItem("1", "Item 1"));
-		addItem(new DummyItem("2", "Item 2"));
-		addItem(new DummyItem("3", "Item 3"));
+		addItem(new ATM("\"Yamaha\" mağazası", "H.Cavid pr. 528 məh", null));
+		addItem(new ATM("H.Cavid Filialı 1", "Bakı, Yasamal rayonu, ...", null));
+		addItem(new ATM("Prospekt", "H.Cavid pr. ev 15, Space TV ilə ...", null));
 	}
 
-	private static void addItem(DummyItem item) {
+	private static void addItem(ATM item) {
 		ITEMS.add(item);
-		ITEM_MAP.put(item.id, item);
+		ITEM_MAP.put(item.shortAddress, item);
 	}
 
 	/**
 	 * A dummy item representing a piece of content.
 	 */
-	public static class DummyItem {
+	/*public static class DummyItem {
 		public String id;
 		public String content;
 
@@ -51,5 +53,5 @@ public class DummyContent {
 		public String toString() {
 			return content;
 		}
-	}
+	}*/
 }

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.safaroff.bakuatm.dummy.DummyContent;
+import com.safaroff.bakuatm.models.ATM;
 
 /**
  * A fragment representing a single ATM detail screen. This fragment is either
@@ -24,7 +25,7 @@ public class ATMDetailFragment extends Fragment {
 	/**
 	 * The dummy content this fragment is presenting.
 	 */
-	private DummyContent.DummyItem mItem;
+	private ATM mItem;
 
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
@@ -55,7 +56,7 @@ public class ATMDetailFragment extends Fragment {
 		// Show the dummy content as text in a TextView.
 		if (mItem != null) {
 			((TextView) rootView.findViewById(R.id.atm_detail))
-					.setText(mItem.content);
+					.setText(mItem.longAddress);
 		}
 
 		return rootView;
