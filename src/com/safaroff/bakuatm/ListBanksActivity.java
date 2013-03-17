@@ -1,9 +1,16 @@
 package com.safaroff.bakuatm;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.safaroff.bakuatm.models.Bank;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -16,6 +23,27 @@ public class ListBanksActivity extends Activity {
 		setContentView(R.layout.activity_list_banks);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		
+		// list of dummy banks
+		List<Bank> listOfBanks = new ArrayList<Bank>();
+		listOfBanks.add(new Bank("Good Bank", null));
+		listOfBanks.add(new Bank("Bad Bank", null));
+		listOfBanks.add(new Bank("Ugly Bank", null));
+		
+		// get root layout
+		LinearLayout linearLayout = (LinearLayout) findViewById(R.id.rootLinearLayout); 
+		
+		// iterate over dummy list and add checkbox
+		for(Bank bank : listOfBanks) {
+			// initialize check box
+			CheckBox checkBox = new CheckBox(this);
+			checkBox.setText(bank.name);
+			checkBox.setTextSize(40);
+			
+			// add checkbox to the layout
+			linearLayout.addView(checkBox);
+		}
 	}
 
 	/**
