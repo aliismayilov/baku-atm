@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -29,6 +29,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.safaroff.bakuatm.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.safaroff.bakuatm.ATMListActivity"
+            android:label="@string/title_atm_list"
+            android:parentActivityName="com.safaroff.bakuatm.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.safaroff.bakuatm.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.safaroff.bakuatm.ATMDetailActivity"
+            android:label="@string/title_atm_detail"
+            android:parentActivityName=".ATMListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ATMListActivity" />
         </activity>
     </application>
 

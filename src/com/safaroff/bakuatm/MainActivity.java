@@ -27,4 +27,11 @@ public class MainActivity extends Activity {
 		
 		startActivity(intent);
 	}
+	
+	/** Called when the user clicks the List ATMs button */
+	public void listATMs(View view) {
+		Intent intent = new Intent(this, ATMListActivity.class);
+		
+		startActivity(intent);
+	}
 }
