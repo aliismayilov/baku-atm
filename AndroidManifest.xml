@@ -46,6 +46,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ATMListActivity" />
         </activity>
+        <activity
+            android:name="com.safaroff.bakuatm.ShowMapActivity"
+            android:label="@string/title_activity_show_map"
+            android:parentActivityName="com.safaroff.bakuatm.ATMDetailActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.safaroff.bakuatm.ATMDetailActivity" />
+        </activity>
     </application>
 
 </manifest>

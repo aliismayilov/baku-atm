@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+import android.view.View;
 
 /**
  * An activity representing a single ATM detail screen. This activity is only
@@ -61,5 +62,12 @@ public class ATMDetailActivity extends FragmentActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	/** Called when the user clicks the show map button */
+	public void showATMOnMap(View view) {
+		Intent intent = new Intent(this, ShowMapActivity.class);
+		
+		startActivity(intent);
 	}
 }

@@ -10,5 +10,7 @@
     <string name="good_bank">Good Bank</string>
     <string name="title_atm_list">ATMs</string>
     <string name="title_atm_detail">ATM Detail</string>
+    <string name="show_on_map">Show On Map</string>
+    <string name="title_activity_show_map">ShowMapActivity</string>
 
 </resources>
